@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 from collections import Counter
 from sklearn.cluster import KMeans
-from .splitters import get_min_mistakes_cut
-from .splitters import get_min_surrogate_cut
+from ExKMC.ExKMC.splitters.cut_finder.pyx import get_min_mistakes_cut
+from ExKMC.ExKMC.splitters.cut_finder.pyx import get_min_surrogate_cut
 
 try:
     from graphviz import Source
